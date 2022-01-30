@@ -209,7 +209,7 @@ auto main() -> int
     std::cout << "#" << guessedWords.size() << " Guess: " << guess /* << " score: " << score(guess, charsState, charsCount) */ << std::endl;
     if (guess == randWord)
       break;
-    updateCharsState(charsState, randWord, guess);
-    // updateCharsStateIo(charsState, guess);
+    // updateCharsState(charsState, randWord, guess);
+    updateCharsStateIo(charsState, guess);
   }
 }
